@@ -103,3 +103,18 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
 }
+
+.left-subtitle {
+  margin-top: 5%;
+  margin-left: 18%;
+}
+
+#sub-title {
+  font-size:xx-large;
+  font-weight: bold;
+}
+
+#sub-info {
+  font-size: 16px;
+  margin-top: 2%;
+}
