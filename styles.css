@@ -64,11 +64,11 @@ body {
 }
 
 .left-content {
-  width: 40%;
+  width: 50%;
 }
 
 .right-content {
-  width: 60%;  
+  width: 50%;  
 }
 
 .img-container {
@@ -79,10 +79,9 @@ body {
 }
 
 #main-img {
-  width: 85%;
+  width: 95%;
   height: auto;
   border-radius: 25px;
-  margin-left: 10%;
 }
 
 .left-header {
@@ -90,6 +89,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 5%;
+  padding-bottom: 2%;
 }
 
 #main-icon {
@@ -105,7 +105,7 @@ body {
 }
 
 .left-subtitle {
-  margin-top: 5%;
+  margin-top: 4%;
   margin-left: 18%;
 }
 
@@ -117,4 +117,40 @@ body {
 #sub-info {
   font-size: 16px;
   margin-top: 2%;
+}
+
+.form-container {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4%;
+  margin-left: 10%;
+  border-radius: 25px;
+}
+
+
+.first-name,
+.last-name,
+.birth-date,
+.email,
+.password,
+.confirm-password {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  margin:2%;
+}
+
+input {
+  margin: 6px 0;
+  border-radius: 10px;
+  padding: 10px;
+  border-width: thin;
+  font-size: 16px;
+  font-family: inherit;
 }
