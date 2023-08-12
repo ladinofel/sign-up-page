@@ -79,8 +79,8 @@ body {
 }
 
 #main-img {
-  width: auto;
-  height: 95%;
+  max-width: auto;
+  max-height: 95%;
   border-radius: 25px;
   margin-right: 8%;
 }
@@ -113,7 +113,6 @@ body {
 
 #sub-title {
   font-size:xx-large;
-  font-weight: bold;
 }
 
 #sub-info {
@@ -158,6 +157,7 @@ input {
 }
 
 .user-preference {
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   margin-left: 12px;
@@ -173,5 +173,30 @@ input {
 
 input[type=radio]{
   accent-color: #5F8629;
+}
+
+.submit-area {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+  align-items: center;
+  margin-right: 20%;
+}
+
+button {
+  display: flex;
+  width: 40%;
+  height: 30px;
+  font-size: larger;
+  border-radius: 15px;
+  border-width: thin;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#log-in {
+  margin-top: 3%;
 }
 
