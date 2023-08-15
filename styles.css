@@ -176,7 +176,7 @@ input[type=radio]{
 }
 
 .submit-area {
-  margin-top: 5%;
+  margin-top: 7%;
   display: flex;
   flex-direction: column;
   width: 100%;  
@@ -190,13 +190,105 @@ button {
   height: 30px;
   font-size: larger;
   border-radius: 15px;
-  border-width: thin;
-  padding: 10px;
+  border-color: aliceblue;
+  padding: 18px;
   align-items: center;
   justify-content: center;
+  background-color: #0A62D0;
+  color:white;
+  transition-duration: 0.4s;
 }
 
+button:hover {
+  background-color: white;
+  color:#0A62D0;
+  border-color: #0A62D0;
+  border-width: 2px;
+}
+
+button:active {
+  background-color: #0A62D0;
+  color: white;
+  border-color: aliceblue;
+}
 #log-in {
   margin-top: 3%;
 }
+
+a {
+  color: #0A62D0;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+input:focus {
+  outline: none;
+  background-color:#dcf4f9;
+}
+
+.required-disclaimer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 88%;
+  font-size: 10px;
+  margin-right: 15%;
+}
+
+#asterisk {
+  color: red;
+}
+
+#email:focus:invalid,
+#password:focus:invalid,
+#confirm_password:focus:invalid {
+  border-color: red;
+  background-color: rgb(242, 213, 213);
+}
+
+#email:focus:valid,
+#password:focus:valid,
+#confirm_password:focus:valid {
+  border-color: green;
+  background-color: rgb(226, 245, 226);
+}
+
+#password + span,
+#email + span {
+  position: relative;
+}
+
+#password + span::before,
+#email + span::before {
+  font-size: 15px;
+  position: absolute;
+  padding: 5px 10px;  
+}
+
+#password:focus:invalid + span::before,
+#email:focus:invalid + span::before {
+  color: red;
+  font-size: small;  
+  margin-top: -8px;
+  font-size: 11px;
+}
+
+#password:focus:invalid + span::before {
+  content: "Uppercase, lowercase, numbers/symbols, and min 8 characters.";
+}
+
+#email:focus:invalid + span::before {
+  content: "Enter a valid email address";
+}
+
+#confirmPassword-feedback {
+  color:red;
+}
+
+
+
+
+
+
+
 
