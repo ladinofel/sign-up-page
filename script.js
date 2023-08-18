@@ -1,3 +1,4 @@
+console.log(alert("TEST"));
 const form = document.getElementById("myForm");
 const password = form.user_password;
 const confirmPassword = form.user_password_confirmation;
