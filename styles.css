@@ -199,12 +199,6 @@ button {
   transition-duration: 0.4s;
 }
 
-button:hover {
-  background-color: white;
-  color:#0A62D0;
-  border-color: #0A62D0;
-  border-width: 2px;
-}
 
 button:active {
   background-color: #0A62D0;
@@ -339,3 +333,11 @@ input:focus {
   padding: 0;
  }
 }
+
+@media (hover: hover) {
+  button:hover {
+    background-color: white;
+    color:#0A62D0;
+    border-color: #0A62D0;
+    border-width: 2px;
+  }}

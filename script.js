@@ -1,4 +1,3 @@
-console.log(alert("TEST"));
 const form = document.getElementById("myForm");
 const password = form.user_password;
 const confirmPassword = form.user_password_confirmation;
@@ -7,7 +6,7 @@ const ageFeedback = document.getElementById("confirm-age-feedback");
 let isPasswordMatch = false;
 let isAdult = false;
 
-confirmPassword.addEventListener("onchange", () => {
+confirmPassword.addEventListener("input", () => {
     if(password.value != confirmPassword.value) {
       feedback.textContent = "Passwords do not match";
       isPasswordMatch = false;  
