@@ -20,7 +20,7 @@
         <p id="sub-info">Let's get started with a free 100% guided training session.</p>
       </div>
       <div class="form-container">
-        <form id="myForm"  action="" method="POST">
+        <form id="myForm"  action="" method="get">
           <div class="first-name">
             <label for="first_name">First name:</label>
             <input type="text" id="first_name" name="user_first_name">
@@ -31,7 +31,8 @@
           </div>
           <div class="birth-date">
             <label for="birth-date"><span id="asterisk">*</span> Birth date:</label>
-            <input type="date" id="birth_date" name="user_birth_date" required>
+            <input oninput="validateAge();"  type="date" id="birth_date" name="user_birth_date" required>
+            <span id="confirm-age-feedback"></span>
           </div>
           <div class="email">
             <label for="email"><span id="asterisk">*</span> Email:</label>
@@ -40,12 +41,12 @@
           </div>
           <div class="password">
             <label for="password"><span id="asterisk">*</span> Password:</label>
-            <input type="password" id="password" name="user_password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            <input type="password" id="password" name="user_password" required  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
             <span></span>
           </div>
           <div class="confirm-password">
             <label for="confirm-password"><span id="asterisk">*</span> Confirm password:</label>
-            <input type="password" id="confirm_password" name="user_password_confirmation" required>
+            <input type="password" id="confirm_password" name="user_password_confirmation" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
             <span id="confirmPassword-feedback"></span>
           </div>
           <div class="required-disclaimer">

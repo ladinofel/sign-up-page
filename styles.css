@@ -267,8 +267,7 @@ input:focus {
 
 #password:focus:invalid + span::before,
 #email:focus:invalid + span::before {
-  color: red;
-  font-size: small;  
+  color: red;  
   margin-top: -8px;
   font-size: 11px;
 }
@@ -280,15 +279,11 @@ input:focus {
 #email:focus:invalid + span::before {
   content: "Enter a valid email address";
 }
-
+#confirm-age-feedback,
 #confirmPassword-feedback {
   color:red;
+  font-size: 11px;
+  margin-left: 5%;
 }
-
-
-
-
-
-
 
 
