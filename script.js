@@ -18,7 +18,7 @@ confirmPassword.addEventListener("input", () => {
 
 function validateAge() {
   let currentDate = new Date();
-  let input = document.getElementById("birth_date").value;
+  let input = document.getElementById("birth-date").value;
   let birthdate = new Date(input);
   let diff = new Date(currentDate - birthdate);
   let age = Math.abs(diff.getUTCFullYear() - 1970);

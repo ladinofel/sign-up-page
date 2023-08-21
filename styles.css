@@ -235,14 +235,14 @@ input:focus {
 
 #email:focus:invalid,
 #password:focus:invalid,
-#confirm_password:focus:invalid {
+#confirm-password:focus:invalid {
   border-color: red;
   background-color: rgb(242, 213, 213);
 }
 
 #email:focus:valid,
 #password:focus:valid,
-#confirm_password:focus:valid {
+#confirm-password:focus:valid {
   border-color: green;
   background-color: rgb(226, 245, 226);
 }
@@ -287,6 +287,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
   }
 
   .form-container {
@@ -325,12 +326,16 @@ input:focus {
  }
  img {
   max-width: 340px;
-  margin-left: 12px;
+  margin-left: 3em;
   max-height: auto;
  }
 
  .left-header {
   padding: 0;
+ }
+
+ button {
+  width: 8em;
  }
 }
 
